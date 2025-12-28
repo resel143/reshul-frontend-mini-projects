@@ -1,0 +1,37 @@
+/* AddTodo.css */
+
+form {
+  display: flex;
+  gap: 10px;
+  max-width: 420px;
+  margin: 0 auto 20px auto;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #f87171; /* red border */
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #b91c1c;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #ef4444; /* red */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #b91c1c;
+}
