@@ -9,7 +9,7 @@ const Todo = () => {
 
   return (
     <div className="todo-container">
-      <h1 className="todo-title">List of Todos</h1>
+      <h1 className="todo-title">Todo :</h1>
 
       {todos.length === 0 ? (
         <p className="empty-text">No todos added</p>
@@ -22,7 +22,7 @@ const Todo = () => {
                 className="delete-btn"
                 onClick={() => dispatch(removeTodo(todo.id))}
               >
-                ✕
+                X
               </button>
             </li>
           ))}

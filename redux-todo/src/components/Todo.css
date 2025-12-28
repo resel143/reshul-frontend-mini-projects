@@ -1,17 +1,19 @@
+/* Todo.css - green theme */
+
 .todo-container {
   max-width: 420px;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
-  background: #f9f9f9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #ecfdf5; /* light green card */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(4, 120, 87, 0.15);
 }
 
 .todo-title {
   text-align: center;
-  margin-bottom: 16px;
   font-size: 22px;
-  color: #333;
+  color: #047857;
+  margin-bottom: 16px;
 }
 
 .todo-list {
@@ -24,41 +26,46 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
+  background: #f0fdf4;
+  border: 2px solid #6ee7b7;
   padding: 10px 14px;
-  margin-bottom: 10px;
   border-radius: 8px;
+  margin-bottom: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .todo-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 8px rgba(4, 120, 87, 0.2);
 }
 
 .todo-text {
   font-size: 16px;
-  color: #444;
+  color: #065f46; /* dark green text */
 }
 
 .delete-btn {
-  background: #ff4d4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6ee7b7;
   border: none;
   color: #fff;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 16px;
   line-height: 1;
+  transition: background-color 0.2s ease;
 }
 
 .delete-btn:hover {
-  background: #e04344;
+  background-color: #047857;
 }
 
 .empty-text {
   text-align: center;
-  color: #888;
+  color: #065f46;
   font-size: 14px;
 }
