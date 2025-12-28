@@ -1,18 +1,18 @@
-/* Todo.css */
+/* Todo.css - green theme */
 
 .todo-container {
   max-width: 420px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fef2f2; /* light red background */
+  background-color: #ecfdf5; /* light green card */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.15);
+  box-shadow: 0 4px 12px rgba(4, 120, 87, 0.15);
 }
 
 .todo-title {
-  text-align: left;
+  text-align: center;
   font-size: 22px;
-  color: #b91c1c;
+  color: #047857;
   margin-bottom: 16px;
 }
 
@@ -22,43 +22,33 @@
   margin: 0;
 }
 
-.todo-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 3px 8px rgba(185, 28, 28, 0.2);
-}
-
-.todo-text {
-  font-size: 16px;
-  color: #991b1b; /* dark red */
-}
-
-.delete-btn:hover {
-  background-color: #b91c1c;
-}
-
-.empty-text {
-  text-align: center;
-  color: #991b1b;
-  font-size: 14px;
-}
-
 .todo-item {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ensures text and button are vertically aligned */
-  background: #fef2f2;
-  border: 2px solid #f87171;
+  align-items: center;
+  background: #f0fdf4;
+  border: 2px solid #6ee7b7;
   padding: 10px 14px;
   border-radius: 8px;
   margin-bottom: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.todo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(4, 120, 87, 0.2);
+}
+
+.todo-text {
+  font-size: 16px;
+  color: #065f46; /* dark green text */
+}
+
 .delete-btn {
-  display: flex;          /* make button a flex container */
-  justify-content: center; /* center the X horizontally */
-  align-items: center;     /* center the X vertically */
-  background: #f87171;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6ee7b7;
   border: none;
   color: #fff;
   width: 28px;
@@ -68,4 +58,14 @@
   font-size: 16px;
   line-height: 1;
   transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #047857;
+}
+
+.empty-text {
+  text-align: center;
+  color: #065f46;
+  font-size: 14px;
 }

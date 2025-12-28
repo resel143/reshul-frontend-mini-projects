@@ -10,7 +10,7 @@ form {
 input[type="text"] {
   flex: 1;
   padding: 10px 12px;
-  border: 2px solid #f87171; /* red border */
+  border: 2px solid #6ee7b7; /* green border */
   border-radius: 8px;
   outline: none;
   font-size: 16px;
@@ -18,12 +18,12 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #b91c1c;
+  border-color: #047857; /* dark green */
 }
 
 button {
   padding: 10px 16px;
-  background-color: #ef4444; /* red */
+  background-color: #10b981; /* green */
   color: white;
   font-weight: bold;
   border: none;
@@ -33,5 +33,5 @@ button {
 }
 
 button:hover {
-  background-color: #b91c1c;
+  background-color: #047857; /* dark green on hover */
 }
