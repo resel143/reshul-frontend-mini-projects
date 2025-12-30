@@ -17,8 +17,14 @@ This project is part of my **frontend mini-projects** collection and follows an 
 
 ## 🚀 Demo
 
-![Redux Todo Demo](https://github.com/resel143/reshul-frontend-mini-projects/blob/reshul-ai/redux/redux-todo/src/assets/todo-list%20demo.gif)
-
+<p align="center">
+  <img 
+    src="https://github.com/resel143/reshul-frontend-mini-projects/blob/reshul-ai/redux/redux-todo/src/assets/todo-list%20demo.gif" 
+    alt="Redux Todo Demo"
+    width="600"
+    height="400"
+  />
+</p>
 ---
 
 ## ✨ Features & Implementation Details
