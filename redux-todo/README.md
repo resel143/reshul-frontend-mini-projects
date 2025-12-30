@@ -1,16 +1,117 @@
-# React + Vite
+# 📝 Redux Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet scalable **Todo application** built using **React** and **Redux Toolkit**, focusing on clean state management, modular architecture, and improved UI/UX.
 
-Currently, two official plugins are available:
+This project is part of my **frontend mini-projects** collection and follows an **issue-driven development approach**, where each feature was implemented and tracked via GitHub issues.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**
+- **Redux Toolkit**
+- **React Redux**
+- **CSS (Custom green theme UI)**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Demo
+
+![Redux Todo Demo](https://github.com/resel143/reshul-frontend-mini-projects/blob/reshul-ai/redux/redux-todo/src/assets/todo-list%20demo.gif)
+
+---
+
+## ✨ Features & Implementation Details
+
+### 1️⃣ Project Setup & State Management
+- Redux store configuration
+- Todo slice creation with reducers
+- Centralized state management
+
+🔗 Issues:
+- Setup Store  
+  https://github.com/resel143/reshul-frontend-mini-projects/issues/2
+- Setup Slice  
+  https://github.com/resel143/reshul-frontend-mini-projects/issues/3
+
+---
+
+### 2️⃣ Frontend Component Architecture
+- Modular React components
+- Redux integration using `useSelector` and `useDispatch`
+- Clean folder structure
+
+🔗 Issue:
+- Setup Frontend React Components  
+  https://github.com/resel143/reshul-frontend-mini-projects/issues/6
+
+---
+
+### 3️⃣ Add & Update Todo Flow
+- Add new todos to Redux state
+- Inline edit functionality
+- Update todo text using `updateTodo` reducer
+- Keyboard support (Enter / Escape)
+
+🔗 Issue:
+- Update Todo Flow  
+  https://github.com/resel143/reshul-frontend-mini-projects/issues/7
+
+---
+
+### 4️⃣ Delete Todo Flow
+- Delete individual todo items
+- Clear all todos at once
+- Redux reducer-based deletion logic
+
+🔗 Issue:
+- Delete Todo Flow  
+  https://github.com/resel143/reshul-frontend-mini-projects/issues/8
+
+---
+
+### 5️⃣ UI & CSS Improvements
+- Green-themed UI
+- Icon-based action buttons (Edit / Delete / Clear)
+- Proper right-aligned action buttons
+- Hover animations and visual feedback
+
+🔗 Issue:
+- Improve CSS  
+  https://github.com/resel143/reshul-frontend-mini-projects/issues/9
+
+---
+
+### 6️⃣ Demo & Final Polish
+- Fully functional demo
+- All features tested and completed
+- Issues closed after validation
+
+🔗 Issue:
+- Demo  
+  https://github.com/resel143/reshul-frontend-mini-projects/issues/10
+
+---
+
+## 🧩 Base Issue (Parent Tracking Issue)
+
+All tasks were tracked under a single parent issue and completed via sub-issues:
+
+🔗 https://github.com/resel143/reshul-frontend-mini-projects/issues/1
+
+---
+
+## 📌 Project Highlights
+
+- Issue-driven development workflow
+- Clean Redux Toolkit usage
+- Beginner-friendly yet scalable structure
+- Focus on UI consistency and UX
+
+---
+
+## 📂 How to Run Locally
+
+```bash
+npm install
+npm start
