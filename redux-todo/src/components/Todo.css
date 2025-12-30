@@ -69,3 +69,25 @@
   color: #065f46;
   font-size: 14px;
 }
+
+.edit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a7f3d0; /* lighter green than delete */
+  border: none;
+  color: #065f46;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px; /* 🔑 smaller for emoji */
+  line-height: 1;
+  margin-left: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: #34d399;
+  transform: scale(1.1);
+}
