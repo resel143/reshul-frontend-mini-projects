@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeTodo } from "../features/todos/todoSlice";
-import './Todo.css'
+import { removeTodo, updateTodo } from "../features/todos/todoSlice";
+import "./Todo.css";
 
 const Todo = () => {
   const todos = useSelector((state) => state.todos);
   const dispatch = useDispatch();
+
+  const [editId, setEditId] = useState(null);
+  const [editText, setEditText] = useState("");
+
+  const startEdit = (todo) => {
+    setEditId(todo.id);
+    setEditText(todo.text);
+  };
+
+  const saveEdit = (id) => {
+    if (!editText.trim()) return;
+    dispatch(updateTodo({ id, text: editText }));
+    setEditId(null);
+  };
 
   return (
     <div className="todo-container">
@@ -17,13 +31,54 @@ const Todo = () => {
         <ul className="todo-list">
           {todos.map((todo) => (
             <li key={todo.id} className="todo-item">
-              <span className="todo-text">{todo.text}</span>
-              <button
-                className="delete-btn"
-                onClick={() => dispatch(removeTodo(todo.id))}
-              >
-                X
-              </button>
+              {editId === todo.id ? (
+                <>
+                  <input
+                    className="edit-input"
+                    value={editText}
+                    onChange={(e) => setEditText(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") saveEdit(todo.id);
+                      if (e.key === "Escape") setEditId(null);
+                    }}
+                    autoFocus
+                  />
+
+                  <button
+                    className="save-btn"
+                    onClick={() => saveEdit(todo.id)}
+                  >
+                    Save
+                  </button>
+
+                  <button
+                    className="cancel-btn"
+                    onClick={() => setEditId(null)}
+                  >
+                    Cancel
+                  </button>
+                </>
+              ) : (
+                <>
+                  <span className="todo-text">{todo.text}</span>
+
+                  {/* EDIT BUTTON */}
+                  <button
+                    className="edit-btn"
+                    onClick={() => startEdit(todo)}
+                  >
+                     ✏️
+                  </button>
+
+                  {/* DELETE BUTTON */}
+                  <button
+                    className="delete-btn"
+                    onClick={() => dispatch(removeTodo(todo.id))}
+                  >
+                    X
+                  </button>
+                </>
+              )}
             </li>
           ))}
         </ul>
