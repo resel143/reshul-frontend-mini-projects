@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeTodo, updateTodo } from "../features/todos/todoSlice";
+import { removeTodo, updateTodo, clearTodo } from "../features/todos/todoSlice";
 import "./Todo.css";
 
 const Todo = () => {
@@ -23,7 +23,19 @@ const Todo = () => {
 
   return (
     <div className="todo-container">
-      <h1 className="todo-title">Todo :</h1>
+      <div className="todo-header">
+        <h1 className="todo-title">Todo :</h1>
+
+        {todos.length > 0 && (
+          <button
+            className="clear-btn"
+            onClick={() => dispatch(clearTodo())}
+            title="Delete all todos"
+          >
+            🗑️
+          </button>
+        )}
+      </div>
 
       {todos.length === 0 ? (
         <p className="empty-text">No todos added</p>
@@ -59,25 +71,24 @@ const Todo = () => {
                   </button>
                 </>
               ) : (
-                <>
-                  <span className="todo-text">{todo.text}</span>
+               <>
+  <span className="todo-text">{todo.text}</span>
 
-                  {/* EDIT BUTTON */}
-                  <button
-                    className="edit-btn"
-                    onClick={() => startEdit(todo)}
-                  >
-                     ✏️
-                  </button>
+  <button
+    className="edit-btn"
+    onClick={() => startEdit(todo)}
+  >
+    ✏️
+  </button>
 
-                  {/* DELETE BUTTON */}
-                  <button
-                    className="delete-btn"
-                    onClick={() => dispatch(removeTodo(todo.id))}
-                  >
-                    X
-                  </button>
-                </>
+  <button
+    className="delete-btn"
+    onClick={() => dispatch(removeTodo(todo.id))}
+  >
+    X
+  </button>
+</>
+
               )}
             </li>
           ))}
