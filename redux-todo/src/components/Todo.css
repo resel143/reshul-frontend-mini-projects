@@ -1,10 +1,8 @@
-/* Todo.css - green theme */
-
 .todo-container {
   max-width: 420px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ecfdf5; /* light green card */
+  background-color: #ecfdf5;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(4, 120, 87, 0.15);
 }
@@ -13,7 +11,7 @@
   text-align: center;
   font-size: 22px;
   color: #047857;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 
 .todo-list {
@@ -90,4 +88,18 @@
 .edit-btn:hover {
   background-color: #34d399;
   transform: scale(1.1);
+}
+
+.todo-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto; /* 🔑 pushes buttons to right */
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
