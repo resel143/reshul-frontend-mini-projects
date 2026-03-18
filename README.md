@@ -1,4 +1,4 @@
-# Reshul Frontend World
+# Reshul Frontend Core
 
 Reshul Frontend is a personal collection of frontend mini-projects created to explore, practice, and showcase modern web development concepts.  
 This repository acts as a centralized space for experimenting with UI/UX ideas, frontend frameworks, component design, and performance-focused implementations.
